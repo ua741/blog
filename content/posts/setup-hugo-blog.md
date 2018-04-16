@@ -28,9 +28,15 @@ git init
 
 
 #### 4. Add the desired theme as a git submodule
+
 ```
 git submodule add https://github.com/digitalcraftsman/hugo-cactus-theme.git themes/hugo-cactus-theme;
+git submodule init
+```
 
+To pull the latest changes from the remote repo
+```
+git submodule update --remote
 ```
 
 
@@ -44,7 +50,7 @@ git submodule add https://github.com/digitalcraftsman/hugo-cactus-theme.git them
  ```
  baseurl = "/"
  themesDir = ""
- theme = "themes/cactus"
+ theme = "themes/hugo-cactus-theme"
  ```
 
 #### 6. Create a new post

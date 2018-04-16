@@ -2,10 +2,10 @@
 baseurl = "/"
 themesDir = ""
 languageCode = "en-us"
-title = "Hugo Cactus Theme"
+title = "Neeraj Gupta: Personal Website"
 theme = "themes/cactus"
 # Enter your tracking code to enable Google Analytics
-googleAnalytics = ""
+googleAnalytics = "UA-116316564-2"
 # Disable comments by leaving disqusShortname empty
 disqusShortname = ""
 

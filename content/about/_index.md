@@ -9,6 +9,4 @@ Software developer with 6+ years of experience in building both consumer & enter
 
 ***
 
-### Past Work Experience.
-
-Ex Lead Platform/Infra Engineer at https://zeta.in
+[Contact me](mailTo:neeraj.gupta983@gmail.com)

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Learning on Neeraj Gupta: Personal Website</title>
+    <link>/tags/learning/</link>
+    <description>Recent content in Learning on Neeraj Gupta: Personal Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 16 Apr 2018 11:55:40 +0530</lastBuildDate>
+    
+	<atom:link href="/tags/learning/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Intelligent Investment: Blinkist Summary</title>
+      <link>/posts/intelligent-investment-blinkist/</link>
+      <pubDate>Mon, 16 Apr 2018 11:55:40 +0530</pubDate>
+      
+      <guid>/posts/intelligent-investment-blinkist/</guid>
+      <description>Cross post from Reddit Blinkist is an website I found which summarises whole books into 10 minute read, Will put this summary as text post as it wouldn&amp;rsquo;t be visible if you won&amp;rsquo;t sign up for it. Do check out the website and support them.
+1.What’s in it for me? Discover how to invest like Warren Buffett Have you ever thought about investing in the stock market? Many of us have given it serious consideration.</description>
+    </item>
+    
+  </channel>
+</rss>

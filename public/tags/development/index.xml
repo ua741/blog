@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Development on Neeraj Gupta: Personal Website</title>
+    <link>/tags/development/</link>
+    <description>Recent content in Development on Neeraj Gupta: Personal Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 16 Apr 2018 11:41:03 +0530</lastBuildDate>
+    
+	<atom:link href="/tags/development/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Steps to set up a hugo blog</title>
+      <link>/posts/setup-hugo-blog/</link>
+      <pubDate>Mon, 16 Apr 2018 11:41:03 +0530</pubDate>
+      
+      <guid>/posts/setup-hugo-blog/</guid>
+      <description>In the very first post, I am just going to document the steps which I followed to set up this personal blog.
+1. Install hugo brew install hugo  2. Create a new hugo site/project hugo new site blog  3. Initialize git for source control cd blog git init  4. Add the desired theme as a git submodule git submodule add https://github.com/digitalcraftsman/hugo-cactus-theme.git themes/hugo-cactus-theme; git submodule init  To pull the latest changes from the remote repo</description>
+    </item>
+    
+  </channel>
+</rss>

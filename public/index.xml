@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Neeraj Gupta: Personal Website</title>
+    <link>/</link>
+    <description>Recent content on Neeraj Gupta: Personal Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 16 Apr 2018 11:55:40 +0530</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Intelligent Investment: Blinkist Summary</title>
+      <link>/posts/intelligent-investment-blinkist/</link>
+      <pubDate>Mon, 16 Apr 2018 11:55:40 +0530</pubDate>
+      
+      <guid>/posts/intelligent-investment-blinkist/</guid>
+      <description>Cross post from Reddit Blinkist is an website I found which summarises whole books into 10 minute read, Will put this summary as text post as it wouldn&amp;rsquo;t be visible if you won&amp;rsquo;t sign up for it. Do check out the website and support them.
+1.What’s in it for me? Discover how to invest like Warren Buffett Have you ever thought about investing in the stock market? Many of us have given it serious consideration.</description>
+    </item>
+    
+    <item>
+      <title>Steps to set up a hugo blog</title>
+      <link>/posts/setup-hugo-blog/</link>
+      <pubDate>Mon, 16 Apr 2018 11:41:03 +0530</pubDate>
+      
+      <guid>/posts/setup-hugo-blog/</guid>
+      <description>In the very first post, I am just going to document the steps which I followed to set up this personal blog.
+1. Install hugo brew install hugo  2. Create a new hugo site/project hugo new site blog  3. Initialize git for source control cd blog git init  4. Add the desired theme as a git submodule git submodule add https://github.com/digitalcraftsman/hugo-cactus-theme.git themes/hugo-cactus-theme; git submodule init  To pull the latest changes from the remote repo</description>
+    </item>
+    
+  </channel>
+</rss>

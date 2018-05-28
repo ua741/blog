@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/posts/intelligent-investment-blinkist/</loc>
+    <lastmod>2018-04-16T11:55:40+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/setup-hugo-blog/</loc>
+    <lastmod>2018-04-16T11:41:03+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/about/</loc>
+    <lastmod>2015-06-20T14:02:37+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/development/</loc>
+    <lastmod>2018-04-16T11:41:03+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/investment/</loc>
+    <lastmod>2018-04-16T11:55:40+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/learning/</loc>
+    <lastmod>2018-04-16T11:55:40+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2018-04-16T11:55:40+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/</loc>
+    <lastmod>2018-04-16T11:55:40+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2018-04-16T11:41:03+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

@@ -45,7 +45,14 @@ disqusShortname = ""
 	iconFont = "mono-social"
     # The social icons can be styled differently if you use mono as font - circle, rounded, or empty
     socialIconStyle = "rounded"
-
+[privacy]
+  [privacy.disqus]
+    disable = true
+  [privacy.googleAnalytics]
+    anonymizeIP = true
+    disable = false
+    respectDoNotTrack = true
+    useSessionStorage = true
 # Add additional social link entries underneath
 [social]
     twitter  = "https://twitter.com/ua741"

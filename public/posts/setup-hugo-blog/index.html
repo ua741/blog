@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Neeraj Gupta">
+<meta name="description" content="Describe your website">
+<meta name="generator" content="Hugo 0.38.2" />
+<title>Steps to set up a hugo blog</title>
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/highlight.css">
+
+
+
+<link rel="stylesheet" href="/css/monosocialiconsfont.css">
+
+
+
+
+<meta property="og:title" content="Steps to set up a hugo blog" />
+<meta property="og:description" content="In the very first post, I am just going to document the steps which I followed to set up this personal blog.
+1. Install hugo brew install hugo  2. Create a new hugo site/project hugo new site blog  3. Initialize git for source control cd blog git init  4. Add the desired theme as a git submodule git submodule add https://github.com/digitalcraftsman/hugo-cactus-theme.git themes/hugo-cactus-theme; git submodule init  To pull the latest changes from the remote repo" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/setup-hugo-blog/" />
+
+
+
+<meta property="article:published_time" content="2018-04-16T11:41:03&#43;05:30"/>
+
+<meta property="article:modified_time" content="2018-04-16T11:41:03&#43;05:30"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="Steps to set up a hugo blog">
+<meta itemprop="description" content="In the very first post, I am just going to document the steps which I followed to set up this personal blog.
+1. Install hugo brew install hugo  2. Create a new hugo site/project hugo new site blog  3. Initialize git for source control cd blog git init  4. Add the desired theme as a git submodule git submodule add https://github.com/digitalcraftsman/hugo-cactus-theme.git themes/hugo-cactus-theme; git submodule init  To pull the latest changes from the remote repo">
+
+
+<meta itemprop="datePublished" content="2018-04-16T11:41:03&#43;05:30" />
+<meta itemprop="dateModified" content="2018-04-16T11:41:03&#43;05:30" />
+<meta itemprop="wordCount" content="283">
+
+
+
+<meta itemprop="keywords" content="development," />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Steps to set up a hugo blog"/>
+<meta name="twitter:description" content="In the very first post, I am just going to document the steps which I followed to set up this personal blog.
+1. Install hugo brew install hugo  2. Create a new hugo site/project hugo new site blog  3. Initialize git for source control cd blog git init  4. Add the desired theme as a git submodule git submodule add https://github.com/digitalcraftsman/hugo-cactus-theme.git themes/hugo-cactus-theme; git submodule init  To pull the latest changes from the remote repo"/>
+<meta name="twitter:site" content="@https://twitter.com/ua741"/>
+
+
+    </head>
+<body>
+    <nav class="main-nav">
+	
+		<a href='/'> <span class="arrow">←</span>Home</a>
+	
+
+	
+ 		<a href='/about/'>About</a>
+  	
+
+	
+</nav>
+
+    <section id="wrapper">
+        
+        
+<article class="post">
+    <header>
+        <h1>Steps to set up a hugo blog</h1>
+        <h2 class="subtitle"></h2>
+        <h2 class="headline">
+        April 16, 2018
+        <br>
+        
+        
+            
+                <a href="/tags/development">development</a>
+            
+        
+        
+        </h2>
+    </header>
+    <section id="post-body">
+        
+
+<p>In the very first post, I am just going to document the steps which I followed to set up this personal blog.</p>
+
+<h5 id="1-install-hugo">1. Install hugo</h5>
+
+<pre><code>brew install hugo
+</code></pre>
+
+<h5 id="2-create-a-new-hugo-site-project">2. Create a new hugo site/project</h5>
+
+<pre><code>hugo new site blog
+</code></pre>
+
+<h5 id="3-initialize-git-for-source-control">3. Initialize git for source control</h5>
+
+<pre><code>cd blog
+git init
+</code></pre>
+
+<h4 id="4-add-the-desired-theme-as-a-git-submodule">4. Add the desired theme as a git submodule</h4>
+
+<pre><code>git submodule add https://github.com/digitalcraftsman/hugo-cactus-theme.git themes/hugo-cactus-theme;
+git submodule init
+</code></pre>
+
+<p>To pull the latest changes from the remote repo</p>
+
+<pre><code>git submodule update --remote
+</code></pre>
+
+<h4 id="5-copy-the-config-file-and-layout-struture-of-the-theme">5. Copy the config file and layout struture of the theme</h4>
+
+<pre><code> cp -r themes/hugo-cactus-theme/layout layout/
+ mv config.toml config.toml.bak &amp;&amp; cp themes/cactus/exampleSite/config.toml .
+</code></pre>
+
+<p>Inside config.toml, I had to make following changes to make the theme work</p>
+
+<pre><code> baseurl = &quot;/&quot;
+ themesDir = &quot;&quot;
+ theme = &quot;themes/hugo-cactus-theme&quot;
+</code></pre>
+
+<h4 id="6-create-a-new-post">6. Create a new post</h4>
+
+<pre><code>hugo new post/setupblog.md
+</code></pre>
+
+<h4 id="7-start-the-hugo-server">7. Start the hugo server</h4>
+
+<p>With -D flag if you want to see draft posts.</p>
+
+<pre><code>hugo server -D
+</code></pre>
+
+<h4 id="8-create-a-repo-on-github-and-push-the-code-after-commit">8. Create a repo on github and push the code after commit</h4>
+
+<pre><code>git commit -m'Initial commit'
+git remote add origin git@github.com:ua741/blog.git
+git push origin master
+</code></pre>
+
+<h4 id="9-deploying-the-blog-on-netlify-for-free">9. Deploying the blog on Netlify [For free]</h4>
+
+<blockquote>
+<ul>
+<li>Sign up on <a href="https://netlify.com">https://netlify.com</a></li>
+<li><a href="/img/setup-01-sign-up-github.png">Create a new site using github as git provider</a></li>
+<li><a href="/img/setup-02-select-blog-repo.png">Select the hugo repo which you want to publish </a></li>
+<li><a href="/img/setup-03-build-common.png">Deployment Settings</a></li>
+</ul>
+</blockquote>
+
+<pre><code>    1. Build command: hugo
+    2. Publish Directory: public
+    3. Advance Settings -&gt; New environment variable
+        Key: HUGO_VERSION
+        Version: {version}  
+        // use whatever hugo version you are using in development 
+</code></pre>
+
+<h3 id="10-using-custom-domain-name-and-ssl">10. Using custom domain name and SSL</h3>
+
+<p>You can by a domain name from <a href="https://godaddy.com">https://godaddy.com</a> or <a href="https://namecheap.com">https://namecheap.com</a> and follow the instructions on Netlify for setting up a custom domain name for your blog.
+Netlify also allows you to enable SSL for free (thanks to <a href="https://letsencrypt.org/">https://letsencrypt.org/</a>), using a single click.</p>
+
+    </section>
+</article>
+
+<footer id="post-meta" class="clearfix">
+    
+    <img class="avatar" src="/images/avatar.png">
+    <div>
+        <span class="dark">Neeraj Gupta</span>
+        <span>Programmer</span>
+    </div>
+    
+    <section id="sharing">
+        <a class="twitter" href="https://twitter.com/intent/tweet?text=%2fposts%2fsetup-hugo-blog%2f - Steps%20to%20set%20up%20a%20hugo%20blog "><span class="icon-twitter"> tweet</span></a>
+
+<a class="facebook" href="#" onclick="
+    window.open(
+      'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+      'facebook-share-dialog',
+      'width=626,height=436');
+    return false;"><span class="icon-facebook-rect"> Share</span>
+</a>
+
+    </section>
+</footer>
+
+
+
+<ul id="post-list" class="archive readmore">
+    <h3>Read more</h3>
+
+    
+    
+    
+        <li>
+            <a href="/posts/intelligent-investment-blinkist/">Intelligent Investment: Blinkist Summary<aside class="dates">Apr 16 2018</aside></a>
+        </li>
+    
+</ul>
+
+
+
+        <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    
+    <a class="symbol" href="https://facebook.com/ua741">
+        roundedfacebook
+    </a>
+    
+    <a class="symbol" href="https://github.com/ua741">
+        roundedgithub
+    </a>
+    
+    <a class="symbol" href="https://linkedin.com/in/ua741/">
+        roundedlinkedin
+    </a>
+    
+    <a class="symbol" href="https://twitter.com/ua741">
+        roundedtwitterbird
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+        © Copyright 2018 Neeraj Gupta
+    
+    </p>
+</footer>
+
+    </section>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/highlight.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-116316564-2', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+</body>
+</html>
